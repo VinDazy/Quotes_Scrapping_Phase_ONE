@@ -6,6 +6,7 @@ import json
 from bs4 import BeautifulSoup
 import requests
 
+
 def scrape():
     """
     this function takes a number of pages to scrape as input (keeping in mind that the maximum number of pages is 10), scrapes the quote,author,tags and author's bio link and stores them in a dictionnary, then converts all the data to a json file called data.json 
@@ -75,6 +76,14 @@ def author_quotes(author_name, data):
 # ? - extract all the tags for the user to pick from     ✔
 # * - this is exactly why you need to comment your code, for a second i thought extracting all the tags would be useless, until i read the comment, thank you me
 # ? - output quote(s) containing similar to exact matching tags ✔
+def filter_unique_authors(data):
+    unique_authors = []
+    for quote_data in data.values():
+        author = quote_data['author']
+        if author not in unique_authors:
+            unique_authors.append(author)
+    return unique_authors
+
 
 
 def filter_tags(data):
@@ -213,6 +222,7 @@ def scrape_data():
     print("\nScrapping ended\n")
     print(f"Execution time : {round(end,2)} seconds")
     return data
+print(filter_unique_authors(data=scrape_data()))
 
 
-scrape_data()
+
