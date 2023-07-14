@@ -2,8 +2,7 @@ import streamlit as st
 import time
 from streamlit_functions import *
 from PIL import Image
-
-
+from pic_scrape import scrape_image
 
 st.title("   Web scrapping analysis app ")
 st.markdown("""
@@ -63,10 +62,16 @@ if scrape_button == True:
 
 if author_quotes_button:
         quotes = st_author_quotes(author_name, data_dict)
+        quotes_column.header(f"{author_name} Quotes")
         for quote in quotes:
             quotes_column.write(quote)
-        image=Image.open('Author pictures/Einstein.jpg ')
+        scrape_image(author_name)
+        edited_author_name=author_name.replace(" ",'_')
+        image=Image.open(f'Author pictures/{edited_author_name}.jpg ')
+        author_link_column.header(f"{author_name} Image")
         author_link_column.image(image,use_column_width="auto")
+        author_link_column.markdown("---")
+        author_link_column.header(f"{author_name} Bio link")
         author_link_column.write(author_link)
 
 
@@ -82,4 +87,4 @@ if display_quotes_button:
     quotes = st_tags_quotes(tags, data_dict, number=number)
     for quote in quotes:
         st.write(quote['quote'] + ' ' + quote['author'])
-print(pages_number)
+#print(pages_number)
