@@ -1,7 +1,7 @@
 import time
 import json
 import numpy as np
-#import matplotlib.pyplot as plt
+import matplotlib.pyplot as plt
 import json
 from bs4 import BeautifulSoup
 import requests
