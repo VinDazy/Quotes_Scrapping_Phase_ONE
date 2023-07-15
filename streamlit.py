@@ -4,6 +4,7 @@ from streamlit_functions import *
 from PIL import Image
 from pic_scrape import scrape_image
 
+     
 st.title("   Web scrapping analysis app ")
 st.markdown("""
 <style>
@@ -19,42 +20,43 @@ st.markdown("""
 """, unsafe_allow_html=True)
 st.markdown("---")
 
-reply = st.radio("Do you want all the website content ? ",
+reply_forum=st.form(key="reply")
+reply = reply_forum.radio("Do you want all the website content ? ",
                  options=("No", "Yes"))
 #! the radio widget in streamlit is like a multichoice question
 if reply == "No":
-    pages_number = st.number_input(
-        "How many pages to scrape ? ", min_value=1, max_value=9, value=1)
+    pages_number = reply_forum.number_input(
+        "How many pages to scrape ? ", min_value=1, max_value=9,value=1)
 else:
     pages_number = 10
+scrape_button = reply_forum.form_submit_button(f"Scrape")
 
-scrape_button = st.button(f"Scrape {pages_number} pages")
+@st.cache_data()
+def Scrape_data(pages_number):
+     data=st_scrape(pages_number)
+     return data
+
 #!Scrapping and calculating run time : start 
 start = time.time()
-data_dict = st_scrape(pages_number)
+data_dict = Scrape_data(pages_number)
 end = time.time()-start
 #!Scrapping and calculating run time : finish  
 
+#if scrape_button == True:
+    #reply_forum.write("Scraping starting ...\n")
+    #time.sleep(round(end,2))
+    #reply_forum.write("\nScrapping ended\n")
+    #reply_forum.write(f"Execution time : {round(end,2)} seconds")
+    #st.markdown("---")
 
+author_info_forum=st.form(key="author info")
 
-
-author_name = st.selectbox("Select an author to Display their information",
+author_name = author_info_forum.selectbox("Select an author to Display their information",
                            options=st_unique_authors(data_dict))
 author_link=author_bio_link(author_name,data_dict)
 #author_link_button=st.button(f"Display {author_name} Bio link")
-author_quotes_button = st.button(f"Display {author_name} information")
-quotes_column,author_link_column=st.columns(2)
-
-st.markdown("---")
-
-
-
-if scrape_button == True:
-    st.write("Scraping starting ...\n")
-    time.sleep(round(end,2))
-    st.write("\nScrapping ended\n")
-    st.write(f"Execution time : {round(end,2)} seconds")
-    #st.markdown("---")
+author_quotes_button = author_info_forum.form_submit_button(f"Display {author_name} information")
+quotes_column,author_link_column=author_info_forum.columns(2)
 
 
 
@@ -78,13 +80,15 @@ if author_quotes_button:
 
 
 
-tags = st.multiselect("Select the tag(s) to display quotes with similar tags",
+tags_form=st.form(key="tags")
+
+tags = tags_form.multiselect("Select the tag(s) to display quotes with similar tags",
                       options=st_filter_tags(data_dict))
-number = st.number_input(
+number = tags_form.number_input(
     "Select the number of quotes to display", max_value=10, min_value=1, value=1)
-display_quotes_button = st.button("Display quotes")
+display_quotes_button = tags_form.form_submit_button("Display quotes")
 if display_quotes_button:
     quotes = st_tags_quotes(tags, data_dict, number=number)
     for quote in quotes:
-        st.write(quote['quote'] + ' ' + quote['author'])
+        tags_form.write(quote['quote'] + ' ' + quote['author'])
 #print(pages_number)

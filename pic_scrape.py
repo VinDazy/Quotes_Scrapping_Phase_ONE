@@ -15,7 +15,8 @@ def scrape_image(author_name):
 
     try:
         # Send a GET request to the author's Wikipedia page
-        response = requests.get(url)
+        headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3'}
+        response = requests.get(url, headers=headers)
         response.raise_for_status()
 
         # Parse the HTML content using BeautifulSoup
@@ -37,7 +38,7 @@ def scrape_image(author_name):
                     image_url = 'https:' + image_url
 
                 # Download the image
-                response = requests.get(image_url)
+                response = requests.get(image_url, headers=headers)
                 response.raise_for_status()
 
                 # Save the image with the author's name as the file name
@@ -56,4 +57,4 @@ def scrape_image(author_name):
 
 
 # Call the function with the author's name
-#scrape_image("Albert Einstein")
+scrape_image("Garrison Keillor")
