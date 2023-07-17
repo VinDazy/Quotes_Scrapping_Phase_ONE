@@ -222,7 +222,6 @@ def scrape_data():
     print("\nScrapping ended\n")
     print(f"Execution time : {round(end,2)} seconds")
     return data
-print(filter_unique_authors(data=scrape_data()))
 
 
 

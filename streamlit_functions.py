@@ -8,6 +8,8 @@ import requests
 import streamlit as st
 from PIL import Image
 from io import BytesIO
+from functions import *
+import plotly.graph_objects as go
 
 
 
@@ -154,3 +156,52 @@ def st_scrape_image(author_name,placement):
 
     except requests.exceptions.RequestException as e:
         placement.write(f'An error occurred: {e}')
+
+def st_graph_tag_instance(data):
+
+    """Using the data file as input, this function shows a plot of the top 10 unique tags and their associated number of instances."""
+    tag_instances = count_tag_instances(data)
+    sorted_tags = sorted(tag_instances.items(), key=lambda x: x[1], reverse=True)
+    top_tags = [tag for tag, _ in sorted_tags[:10]]
+    top_instances = [tag_instances[tag] for tag in top_tags]
+
+    fig = go.Figure(data=[
+        go.Bar(x=top_tags, y=top_instances, marker=dict(color=['red' if instance == max(top_instances) else 'blue' for instance in top_instances]))
+    ])
+
+    fig.update_layout(
+        title='Number of Instances per Tag',
+        xaxis_title='Top 10 Tags',
+        yaxis_title='Instances',
+        showlegend=False,
+        height=500,
+        width=650,
+        margin=dict(l=50, r=50, t=50, b=50)
+    )
+
+    return(fig)
+def st_graph_author_quote(data):
+    """
+    Graph the authors with their respective numbers of quotes and highlights the maximum
+    """
+    author_quotes_dict = filter_authors(data)
+    sorted_authors = sorted(author_quotes_dict.items(), key=lambda x: x[1]['Nb_quotes'], reverse=True)
+
+    top_authors = [author for author, _ in sorted_authors[:10]]
+    top_quotes = [author_quotes_dict[author]['Nb_quotes'] for author in top_authors]
+
+    fig = go.Figure(data=[
+        go.Bar(x=top_authors, y=top_quotes, marker=dict(color=['red' if quotes == max(top_quotes) else 'blue' for quotes in top_quotes]))
+    ])
+
+    fig.update_layout(
+        title=f'Top {len(top_authors)} Authors',
+        xaxis_title='Authors',
+        yaxis_title='Number of Quotes',
+        showlegend=False,
+        height=500,
+        width=650,
+        margin=dict(l=50, r=50, t=50, b=50)
+    )
+
+    return fig 

@@ -2,6 +2,7 @@ import streamlit as st
 import time
 from streamlit_functions import *
 from PIL import Image
+st.set_page_config(layout="wide",page_icon="💭")
 
      
 st.title("   Web scrapping analysis app ")
@@ -19,7 +20,11 @@ st.markdown("""
 """, unsafe_allow_html=True)
 st.markdown("---")
 
+
+
+
 reply_forum=st.form(key="reply")
+
 reply = reply_forum.radio("Do you want all the website content ? ",
                  options=("No", "Yes"))
 #! the radio widget in streamlit is like a multichoice question
@@ -29,15 +34,19 @@ if reply == "No":
 else:
     pages_number = 10
 scrape_button = reply_forum.form_submit_button(f"Scrape")
-
 @st.cache_data()
 def Scrape_data(pages_number):
      data=st_scrape(pages_number)
      return data
+data_dict={}
+if scrape_button:
+    data_dict = Scrape_data(pages_number)
+
+
+
 
 #!Scrapping and calculating run time : start 
 start = time.time()
-data_dict = Scrape_data(pages_number)
 end = time.time()-start
 #!Scrapping and calculating run time : finish  
 
@@ -91,4 +100,19 @@ if display_quotes_button:
     quotes = st_tags_quotes(tags, data_dict, number=number)
     for quote in quotes:
         tags_form.write(quote['quote'] + ' ' + quote['author'])
-#print(pages_number)
+
+
+graph_form=st.form(key="graph")
+graph_form.header("graphs")
+tag_instances_column,author_quotes_column=graph_form.columns(2)
+
+show_graphs=graph_form.form_submit_button("Display graphs")
+
+if show_graphs:
+     with tag_instances_column:
+        fig1=st_graph_tag_instance(data_dict)
+        tag_instances_column.plotly_chart(fig1)
+          
+     with author_quotes_column:
+        fig2 = st_graph_author_quote(data_dict)
+        author_quotes_column.plotly_chart(fig2)
