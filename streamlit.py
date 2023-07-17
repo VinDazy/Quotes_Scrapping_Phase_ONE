@@ -2,7 +2,6 @@ import streamlit as st
 import time
 from streamlit_functions import *
 from PIL import Image
-from pic_scrape import scrape_image
 
      
 st.title("   Web scrapping analysis app ")
@@ -67,11 +66,12 @@ if author_quotes_button:
         quotes_column.header(f"{author_name} Quotes")
         for quote in quotes:
             quotes_column.write(quote)
-        scrape_image(author_name)
+        #scrape_image(author_name)
         edited_author_name=author_name.replace(" ",'_')
-        image=Image.open(f'Author pictures/{edited_author_name}.jpg ')
+        #image=Image.open(f'Author pictures/{edited_author_name}.jpg ')
         author_link_column.header(f"{author_name} Image")
-        author_link_column.image(image,use_column_width="auto")
+        st_scrape_image(author_name,author_link_column)
+        #author_link_column.image(image,use_column_width="auto")
         author_link_column.markdown("---")
         author_link_column.header(f"{author_name} Bio link")
         author_link_column.write(author_link)

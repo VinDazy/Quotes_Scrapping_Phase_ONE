@@ -6,6 +6,9 @@ import json
 from bs4 import BeautifulSoup
 import requests
 import streamlit as st
+from PIL import Image
+from io import BytesIO
+
 
 
 def st_scrape(num_pages):
@@ -88,3 +91,66 @@ def author_bio_link(author_name,data):
     for quote in data:
         if author_name==data[quote]['author']:
             return data[quote]['author_bio']
+import requests
+from bs4 import BeautifulSoup
+import streamlit as st
+from PIL import Image
+import io
+
+
+def st_scrape_image(author_name,placement):
+    author_link_column=placement
+    author_name = author_name.replace(" ", '_')
+    url = "https://en.wikipedia.org/wiki/"
+    url = url + author_name
+
+    try:
+        # Set the User-Agent header to comply with the Wikimedia User-Agent policy
+        headers = {
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
+        }
+
+        # Send a GET request to the author's Wikipedia page
+        response = requests.get(url, headers=headers)
+        response.raise_for_status()
+
+        # Parse the HTML content using BeautifulSoup
+        soup = BeautifulSoup(response.content, 'html.parser')
+
+        # Find the infobox table on the page
+        infobox = soup.find('table', class_='infobox')
+
+        if infobox is not None:
+            # Find the first image in the infobox
+            image = infobox.find('img')
+
+            if image is not None:
+                # Get the source URL of the image
+                image_url = image['src']
+
+                # Handle relative and absolute image URLs
+                if not image_url.startswith('http'):
+                    image_url = 'https:' + image_url
+
+                # Download the image
+                response = requests.get(image_url, headers=headers)
+                response.raise_for_status()
+
+                # Check if the response content is image data
+                content_type = response.headers.get('Content-Type')
+                if 'image' in content_type:
+                    # Load the image from the response content
+                    image_data = response.content
+                    image = Image.open(io.BytesIO(image_data))
+
+                    # Display the image in the Streamlit web app
+                    placement.image(image)
+                else:
+                    placement.write('The response does not contain image data.')
+            else:
+                placement.write('No image found for the author.')
+        else:
+            placement.write('No infobox found on the Wikipedia page.')
+
+    except requests.exceptions.RequestException as e:
+        placement.write(f'An error occurred: {e}')
