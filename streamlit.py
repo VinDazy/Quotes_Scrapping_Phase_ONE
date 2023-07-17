@@ -54,7 +54,7 @@ author_name = author_info_forum.selectbox("Select an author to Display their inf
                            options=st_unique_authors(data_dict))
 author_link=author_bio_link(author_name,data_dict)
 #author_link_button=st.button(f"Display {author_name} Bio link")
-author_quotes_button = author_info_forum.form_submit_button(f"Display {author_name} information")
+author_quotes_button = author_info_forum.form_submit_button(f"Display information")
 quotes_column,author_link_column=author_info_forum.columns(2)
 
 
