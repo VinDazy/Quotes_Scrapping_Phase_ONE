@@ -57,4 +57,4 @@ def scrape_image(author_name):
 
 
 # Call the function with the author's name
-scrape_image("Garrison Keillor")
+scrape_image("Mark Twain")
