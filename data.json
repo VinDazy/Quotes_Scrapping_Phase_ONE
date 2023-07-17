@@ -289,5 +289,643 @@
             "music"
         ],
         "author_bio": "http://quotes.toscrape.com//author/Bob-Marley"
+    },
+    "31": {
+        "quote": "“The more that you read, the more things you will know. The more that you learn, the more places you'll go.”",
+        "author": "Dr. Seuss",
+        "tags": [
+            "learning",
+            "reading",
+            "seuss"
+        ],
+        "author_bio": "http://quotes.toscrape.com//author/Dr-Seuss"
+    },
+    "32": {
+        "quote": "“Of course it is happening inside your head, Harry, but why on earth should that mean that it is not real?”",
+        "author": "J.K. Rowling",
+        "tags": [
+            "dumbledore"
+        ],
+        "author_bio": "http://quotes.toscrape.com//author/J-K-Rowling"
+    },
+    "33": {
+        "quote": "“The truth is, everyone is going to hurt you. You just got to find the ones worth suffering for.”",
+        "author": "Bob Marley",
+        "tags": [
+            "friendship"
+        ],
+        "author_bio": "http://quotes.toscrape.com//author/Bob-Marley"
+    },
+    "34": {
+        "quote": "“Not all of us can do great things. But we can do small things with great love.”",
+        "author": "Mother Teresa",
+        "tags": [
+            "misattributed-to-mother-teresa",
+            "paraphrased"
+        ],
+        "author_bio": "http://quotes.toscrape.com//author/Mother-Teresa"
+    },
+    "35": {
+        "quote": "“To the well-organized mind, death is but the next great adventure.”",
+        "author": "J.K. Rowling",
+        "tags": [
+            "death",
+            "inspirational"
+        ],
+        "author_bio": "http://quotes.toscrape.com//author/J-K-Rowling"
+    },
+    "36": {
+        "quote": "“All you need is love. But a little chocolate now and then doesn't hurt.”",
+        "author": "Charles M. Schulz",
+        "tags": [
+            "chocolate",
+            "food",
+            "humor"
+        ],
+        "author_bio": "http://quotes.toscrape.com//author/Charles-M-Schulz"
+    },
+    "37": {
+        "quote": "“We read to know we're not alone.”",
+        "author": "William Nicholson",
+        "tags": [
+            "misattributed-to-c-s-lewis",
+            "reading"
+        ],
+        "author_bio": "http://quotes.toscrape.com//author/William-Nicholson"
+    },
+    "38": {
+        "quote": "“Any fool can know. The point is to understand.”",
+        "author": "Albert Einstein",
+        "tags": [
+            "knowledge",
+            "learning",
+            "understanding",
+            "wisdom"
+        ],
+        "author_bio": "http://quotes.toscrape.com//author/Albert-Einstein"
+    },
+    "39": {
+        "quote": "“I have always imagined that Paradise will be a kind of library.”",
+        "author": "Jorge Luis Borges",
+        "tags": [
+            "books",
+            "library"
+        ],
+        "author_bio": "http://quotes.toscrape.com//author/Jorge-Luis-Borges"
+    },
+    "40": {
+        "quote": "“It is never too late to be what you might have been.”",
+        "author": "George Eliot",
+        "tags": [
+            "inspirational"
+        ],
+        "author_bio": "http://quotes.toscrape.com//author/George-Eliot"
+    },
+    "41": {
+        "quote": "“A reader lives a thousand lives before he dies, said Jojen. The man who never reads lives only one.”",
+        "author": "George R.R. Martin",
+        "tags": [
+            "read",
+            "readers",
+            "reading",
+            "reading-books"
+        ],
+        "author_bio": "http://quotes.toscrape.com//author/George-R-R-Martin"
+    },
+    "42": {
+        "quote": "“You can never get a cup of tea large enough or a book long enough to suit me.”",
+        "author": "C.S. Lewis",
+        "tags": [
+            "books",
+            "inspirational",
+            "reading",
+            "tea"
+        ],
+        "author_bio": "http://quotes.toscrape.com//author/C-S-Lewis"
+    },
+    "43": {
+        "quote": "“You believe lies so you eventually learn to trust no one but yourself.”",
+        "author": "Marilyn Monroe",
+        "tags": [],
+        "author_bio": "http://quotes.toscrape.com//author/Marilyn-Monroe"
+    },
+    "44": {
+        "quote": "“If you can make a woman laugh, you can make her do anything.”",
+        "author": "Marilyn Monroe",
+        "tags": [
+            "girls",
+            "love"
+        ],
+        "author_bio": "http://quotes.toscrape.com//author/Marilyn-Monroe"
+    },
+    "45": {
+        "quote": "“Life is like riding a bicycle. To keep your balance, you must keep moving.”",
+        "author": "Albert Einstein",
+        "tags": [
+            "life",
+            "simile"
+        ],
+        "author_bio": "http://quotes.toscrape.com//author/Albert-Einstein"
+    },
+    "46": {
+        "quote": "“The real lover is the man who can thrill you by kissing your forehead or smiling into your eyes or just staring into space.”",
+        "author": "Marilyn Monroe",
+        "tags": [
+            "love"
+        ],
+        "author_bio": "http://quotes.toscrape.com//author/Marilyn-Monroe"
+    },
+    "47": {
+        "quote": "“A wise girl kisses but doesn't love, listens but doesn't believe, and leaves before she is left.”",
+        "author": "Marilyn Monroe",
+        "tags": [
+            "attributed-no-source"
+        ],
+        "author_bio": "http://quotes.toscrape.com//author/Marilyn-Monroe"
+    },
+    "48": {
+        "quote": "“Only in the darkness can you see the stars.”",
+        "author": "Martin Luther King Jr.",
+        "tags": [
+            "hope",
+            "inspirational"
+        ],
+        "author_bio": "http://quotes.toscrape.com//author/Martin-Luther-King-Jr"
+    },
+    "49": {
+        "quote": "“It matters not what someone is born, but what they grow to be.”",
+        "author": "J.K. Rowling",
+        "tags": [
+            "dumbledore"
+        ],
+        "author_bio": "http://quotes.toscrape.com//author/J-K-Rowling"
+    },
+    "50": {
+        "quote": "“Love does not begin and end the way we seem to think it does. Love is a battle, love is a war; love is a growing up.”",
+        "author": "James Baldwin",
+        "tags": [
+            "love"
+        ],
+        "author_bio": "http://quotes.toscrape.com//author/James-Baldwin"
+    },
+    "51": {
+        "quote": "“There is nothing I would not do for those who are really my friends. I have no notion of loving people by halves, it is not my nature.”",
+        "author": "Jane Austen",
+        "tags": [
+            "friendship",
+            "love"
+        ],
+        "author_bio": "http://quotes.toscrape.com//author/Jane-Austen"
+    },
+    "52": {
+        "quote": "“Do one thing every day that scares you.”",
+        "author": "Eleanor Roosevelt",
+        "tags": [
+            "attributed",
+            "fear",
+            "inspiration"
+        ],
+        "author_bio": "http://quotes.toscrape.com//author/Eleanor-Roosevelt"
+    },
+    "53": {
+        "quote": "“I am good, but not an angel. I do sin, but I am not the devil. I am just a small girl in a big world trying to find someone to love.”",
+        "author": "Marilyn Monroe",
+        "tags": [
+            "attributed-no-source"
+        ],
+        "author_bio": "http://quotes.toscrape.com//author/Marilyn-Monroe"
+    },
+    "54": {
+        "quote": "“If I were not a physicist, I would probably be a musician. I often think in music. I live my daydreams in music. I see my life in terms of music.”",
+        "author": "Albert Einstein",
+        "tags": [
+            "music"
+        ],
+        "author_bio": "http://quotes.toscrape.com//author/Albert-Einstein"
+    },
+    "55": {
+        "quote": "“If you only read the books that everyone else is reading, you can only think what everyone else is thinking.”",
+        "author": "Haruki Murakami",
+        "tags": [
+            "books",
+            "thought"
+        ],
+        "author_bio": "http://quotes.toscrape.com//author/Haruki-Murakami"
+    },
+    "56": {
+        "quote": "“The difference between genius and stupidity is: genius has its limits.”",
+        "author": "Alexandre Dumas fils",
+        "tags": [
+            "misattributed-to-einstein"
+        ],
+        "author_bio": "http://quotes.toscrape.com//author/Alexandre-Dumas-fils"
+    },
+    "57": {
+        "quote": "“He's like a drug for you, Bella.”",
+        "author": "Stephenie Meyer",
+        "tags": [
+            "drug",
+            "romance",
+            "simile"
+        ],
+        "author_bio": "http://quotes.toscrape.com//author/Stephenie-Meyer"
+    },
+    "58": {
+        "quote": "“There is no friend as loyal as a book.”",
+        "author": "Ernest Hemingway",
+        "tags": [
+            "books",
+            "friends",
+            "novelist-quotes"
+        ],
+        "author_bio": "http://quotes.toscrape.com//author/Ernest-Hemingway"
+    },
+    "59": {
+        "quote": "“When one door of happiness closes, another opens; but often we look so long at the closed door that we do not see the one which has been opened for us.”",
+        "author": "Helen Keller",
+        "tags": [
+            "inspirational"
+        ],
+        "author_bio": "http://quotes.toscrape.com//author/Helen-Keller"
+    },
+    "60": {
+        "quote": "“Life isn't about finding yourself. Life is about creating yourself.”",
+        "author": "George Bernard Shaw",
+        "tags": [
+            "inspirational",
+            "life",
+            "yourself"
+        ],
+        "author_bio": "http://quotes.toscrape.com//author/George-Bernard-Shaw"
+    },
+    "61": {
+        "quote": "“That's the problem with drinking, I thought, as I poured myself a drink. If something bad happens you drink in an attempt to forget; if something good happens you drink in order to celebrate; and if nothing happens you drink to make something happen.”",
+        "author": "Charles Bukowski",
+        "tags": [
+            "alcohol"
+        ],
+        "author_bio": "http://quotes.toscrape.com//author/Charles-Bukowski"
+    },
+    "62": {
+        "quote": "“You don’t forget the face of the person who was your last hope.”",
+        "author": "Suzanne Collins",
+        "tags": [
+            "the-hunger-games"
+        ],
+        "author_bio": "http://quotes.toscrape.com//author/Suzanne-Collins"
+    },
+    "63": {
+        "quote": "“Remember, we're madly in love, so it's all right to kiss me anytime you feel like it.”",
+        "author": "Suzanne Collins",
+        "tags": [
+            "humor"
+        ],
+        "author_bio": "http://quotes.toscrape.com//author/Suzanne-Collins"
+    },
+    "64": {
+        "quote": "“To love at all is to be vulnerable. Love anything and your heart will be wrung and possibly broken. If you want to make sure of keeping it intact you must give it to no one, not even an animal. Wrap it carefully round with hobbies and little luxuries; avoid all entanglements. Lock it up safe in the casket or coffin of your selfishness. But in that casket, safe, dark, motionless, airless, it will change. It will not be broken; it will become unbreakable, impenetrable, irredeemable. To love is to be vulnerable.”",
+        "author": "C.S. Lewis",
+        "tags": [
+            "love"
+        ],
+        "author_bio": "http://quotes.toscrape.com//author/C-S-Lewis"
+    },
+    "65": {
+        "quote": "“Not all those who wander are lost.”",
+        "author": "J.R.R. Tolkien",
+        "tags": [
+            "bilbo",
+            "journey",
+            "lost",
+            "quest",
+            "travel",
+            "wander"
+        ],
+        "author_bio": "http://quotes.toscrape.com//author/J-R-R-Tolkien"
+    },
+    "66": {
+        "quote": "“Do not pity the dead, Harry. Pity the living, and, above all those who live without love.”",
+        "author": "J.K. Rowling",
+        "tags": [
+            "live-death-love"
+        ],
+        "author_bio": "http://quotes.toscrape.com//author/J-K-Rowling"
+    },
+    "67": {
+        "quote": "“There is nothing to writing. All you do is sit down at a typewriter and bleed.”",
+        "author": "Ernest Hemingway",
+        "tags": [
+            "good",
+            "writing"
+        ],
+        "author_bio": "http://quotes.toscrape.com//author/Ernest-Hemingway"
+    },
+    "68": {
+        "quote": "“Finish each day and be done with it. You have done what you could. Some blunders and absurdities no doubt crept in; forget them as soon as you can. Tomorrow is a new day. You shall begin it serenely and with too high a spirit to be encumbered with your old nonsense.”",
+        "author": "Ralph Waldo Emerson",
+        "tags": [
+            "life",
+            "regrets"
+        ],
+        "author_bio": "http://quotes.toscrape.com//author/Ralph-Waldo-Emerson"
+    },
+    "69": {
+        "quote": "“I have never let my schooling interfere with my education.”",
+        "author": "Mark Twain",
+        "tags": [
+            "education"
+        ],
+        "author_bio": "http://quotes.toscrape.com//author/Mark-Twain"
+    },
+    "70": {
+        "quote": "“I have heard there are troubles of more than one kind. Some come from ahead and some come from behind. But I've bought a big bat. I'm all ready you see. Now my troubles are going to have troubles with me!”",
+        "author": "Dr. Seuss",
+        "tags": [
+            "troubles"
+        ],
+        "author_bio": "http://quotes.toscrape.com//author/Dr-Seuss"
+    },
+    "71": {
+        "quote": "“If I had a flower for every time I thought of you...I could walk through my garden forever.”",
+        "author": "Alfred Tennyson",
+        "tags": [
+            "friendship",
+            "love"
+        ],
+        "author_bio": "http://quotes.toscrape.com//author/Alfred-Tennyson"
+    },
+    "72": {
+        "quote": "“Some people never go crazy. What truly horrible lives they must lead.”",
+        "author": "Charles Bukowski",
+        "tags": [
+            "humor"
+        ],
+        "author_bio": "http://quotes.toscrape.com//author/Charles-Bukowski"
+    },
+    "73": {
+        "quote": "“The trouble with having an open mind, of course, is that people will insist on coming along and trying to put things in it.”",
+        "author": "Terry Pratchett",
+        "tags": [
+            "humor",
+            "open-mind",
+            "thinking"
+        ],
+        "author_bio": "http://quotes.toscrape.com//author/Terry-Pratchett"
+    },
+    "74": {
+        "quote": "“Think left and think right and think low and think high. Oh, the thinks you can think up if only you try!”",
+        "author": "Dr. Seuss",
+        "tags": [
+            "humor",
+            "philosophy"
+        ],
+        "author_bio": "http://quotes.toscrape.com//author/Dr-Seuss"
+    },
+    "75": {
+        "quote": "“What really knocks me out is a book that, when you're all done reading it, you wish the author that wrote it was a terrific friend of yours and you could call him up on the phone whenever you felt like it. That doesn't happen much, though.”",
+        "author": "J.D. Salinger",
+        "tags": [
+            "authors",
+            "books",
+            "literature",
+            "reading",
+            "writing"
+        ],
+        "author_bio": "http://quotes.toscrape.com//author/J-D-Salinger"
+    },
+    "76": {
+        "quote": "“The reason I talk to myself is because I’m the only one whose answers I accept.”",
+        "author": "George Carlin",
+        "tags": [
+            "humor",
+            "insanity",
+            "lies",
+            "lying",
+            "self-indulgence",
+            "truth"
+        ],
+        "author_bio": "http://quotes.toscrape.com//author/George-Carlin"
+    },
+    "77": {
+        "quote": "“You may say I'm a dreamer, but I'm not the only one. I hope someday you'll join us. And the world will live as one.”",
+        "author": "John Lennon",
+        "tags": [
+            "beatles",
+            "connection",
+            "dreamers",
+            "dreaming",
+            "dreams",
+            "hope",
+            "inspirational",
+            "peace"
+        ],
+        "author_bio": "http://quotes.toscrape.com//author/John-Lennon"
+    },
+    "78": {
+        "quote": "“I am free of all prejudice. I hate everyone equally. ”",
+        "author": "W.C. Fields",
+        "tags": [
+            "humor",
+            "sinister"
+        ],
+        "author_bio": "http://quotes.toscrape.com//author/W-C-Fields"
+    },
+    "79": {
+        "quote": "“The question isn't who is going to let me; it's who is going to stop me.”",
+        "author": "Ayn Rand",
+        "tags": [],
+        "author_bio": "http://quotes.toscrape.com//author/Ayn-Rand"
+    },
+    "80": {
+        "quote": "“′Classic′ - a book which people praise and don't read.”",
+        "author": "Mark Twain",
+        "tags": [
+            "books",
+            "classic",
+            "reading"
+        ],
+        "author_bio": "http://quotes.toscrape.com//author/Mark-Twain"
+    },
+    "81": {
+        "quote": "“Anyone who has never made a mistake has never tried anything new.”",
+        "author": "Albert Einstein",
+        "tags": [
+            "mistakes"
+        ],
+        "author_bio": "http://quotes.toscrape.com//author/Albert-Einstein"
+    },
+    "82": {
+        "quote": "“A lady's imagination is very rapid; it jumps from admiration to love, from love to matrimony in a moment.”",
+        "author": "Jane Austen",
+        "tags": [
+            "humor",
+            "love",
+            "romantic",
+            "women"
+        ],
+        "author_bio": "http://quotes.toscrape.com//author/Jane-Austen"
+    },
+    "83": {
+        "quote": "“Remember, if the time should come when you have to make a choice between what is right and what is easy, remember what happened to a boy who was good, and kind, and brave, because he strayed across the path of Lord Voldemort. Remember Cedric Diggory.”",
+        "author": "J.K. Rowling",
+        "tags": [
+            "integrity"
+        ],
+        "author_bio": "http://quotes.toscrape.com//author/J-K-Rowling"
+    },
+    "84": {
+        "quote": "“I declare after all there is no enjoyment like reading! How much sooner one tires of any thing than of a book! -- When I have a house of my own, I shall be miserable if I have not an excellent library.”",
+        "author": "Jane Austen",
+        "tags": [
+            "books",
+            "library",
+            "reading"
+        ],
+        "author_bio": "http://quotes.toscrape.com//author/Jane-Austen"
+    },
+    "85": {
+        "quote": "“There are few people whom I really love, and still fewer of whom I think well. The more I see of the world, the more am I dissatisfied with it; and every day confirms my belief of the inconsistency of all human characters, and of the little dependence that can be placed on the appearance of merit or sense.”",
+        "author": "Jane Austen",
+        "tags": [
+            "elizabeth-bennet",
+            "jane-austen"
+        ],
+        "author_bio": "http://quotes.toscrape.com//author/Jane-Austen"
+    },
+    "86": {
+        "quote": "“Some day you will be old enough to start reading fairy tales again.”",
+        "author": "C.S. Lewis",
+        "tags": [
+            "age",
+            "fairytales",
+            "growing-up"
+        ],
+        "author_bio": "http://quotes.toscrape.com//author/C-S-Lewis"
+    },
+    "87": {
+        "quote": "“We are not necessarily doubting that God will do the best for us; we are wondering how painful the best will turn out to be.”",
+        "author": "C.S. Lewis",
+        "tags": [
+            "god"
+        ],
+        "author_bio": "http://quotes.toscrape.com//author/C-S-Lewis"
+    },
+    "88": {
+        "quote": "“The fear of death follows from the fear of life. A man who lives fully is prepared to die at any time.”",
+        "author": "Mark Twain",
+        "tags": [
+            "death",
+            "life"
+        ],
+        "author_bio": "http://quotes.toscrape.com//author/Mark-Twain"
+    },
+    "89": {
+        "quote": "“A lie can travel half way around the world while the truth is putting on its shoes.”",
+        "author": "Mark Twain",
+        "tags": [
+            "misattributed-mark-twain",
+            "truth"
+        ],
+        "author_bio": "http://quotes.toscrape.com//author/Mark-Twain"
+    },
+    "90": {
+        "quote": "“I believe in Christianity as I believe that the sun has risen: not only because I see it, but because by it I see everything else.”",
+        "author": "C.S. Lewis",
+        "tags": [
+            "christianity",
+            "faith",
+            "religion",
+            "sun"
+        ],
+        "author_bio": "http://quotes.toscrape.com//author/C-S-Lewis"
+    },
+    "91": {
+        "quote": "“The truth.\" Dumbledore sighed. \"It is a beautiful and terrible thing, and should therefore be treated with great caution.”",
+        "author": "J.K. Rowling",
+        "tags": [
+            "truth"
+        ],
+        "author_bio": "http://quotes.toscrape.com//author/J-K-Rowling"
+    },
+    "92": {
+        "quote": "“I'm the one that's got to die when it's time for me to die, so let me live my life the way I want to.”",
+        "author": "Jimi Hendrix",
+        "tags": [
+            "death",
+            "life"
+        ],
+        "author_bio": "http://quotes.toscrape.com//author/Jimi-Hendrix"
+    },
+    "93": {
+        "quote": "“To die will be an awfully big adventure.”",
+        "author": "J.M. Barrie",
+        "tags": [
+            "adventure",
+            "love"
+        ],
+        "author_bio": "http://quotes.toscrape.com//author/J-M-Barrie"
+    },
+    "94": {
+        "quote": "“It takes courage to grow up and become who you really are.”",
+        "author": "E.E. Cummings",
+        "tags": [
+            "courage"
+        ],
+        "author_bio": "http://quotes.toscrape.com//author/E-E-Cummings"
+    },
+    "95": {
+        "quote": "“But better to get hurt by the truth than comforted with a lie.”",
+        "author": "Khaled Hosseini",
+        "tags": [
+            "life"
+        ],
+        "author_bio": "http://quotes.toscrape.com//author/Khaled-Hosseini"
+    },
+    "96": {
+        "quote": "“You never really understand a person until you consider things from his point of view... Until you climb inside of his skin and walk around in it.”",
+        "author": "Harper Lee",
+        "tags": [
+            "better-life-empathy"
+        ],
+        "author_bio": "http://quotes.toscrape.com//author/Harper-Lee"
+    },
+    "97": {
+        "quote": "“You have to write the book that wants to be written. And if the book will be too difficult for grown-ups, then you write it for children.”",
+        "author": "Madeleine L'Engle",
+        "tags": [
+            "books",
+            "children",
+            "difficult",
+            "grown-ups",
+            "write",
+            "writers",
+            "writing"
+        ],
+        "author_bio": "http://quotes.toscrape.com//author/Madeleine-LEngle"
+    },
+    "98": {
+        "quote": "“Never tell the truth to people who are not worthy of it.”",
+        "author": "Mark Twain",
+        "tags": [
+            "truth"
+        ],
+        "author_bio": "http://quotes.toscrape.com//author/Mark-Twain"
+    },
+    "99": {
+        "quote": "“A person's a person, no matter how small.”",
+        "author": "Dr. Seuss",
+        "tags": [
+            "inspirational"
+        ],
+        "author_bio": "http://quotes.toscrape.com//author/Dr-Seuss"
+    },
+    "100": {
+        "quote": "“... a mind needs books as a sword needs a whetstone, if it is to keep its edge.”",
+        "author": "George R.R. Martin",
+        "tags": [
+            "books",
+            "mind"
+        ],
+        "author_bio": "http://quotes.toscrape.com//author/George-R-R-Martin"
     }
 }

@@ -38,15 +38,14 @@ scrape_button = reply_forum.form_submit_button(f"Scrape")
 def Scrape_data(pages_number):
      data=st_scrape(pages_number)
      return data
-data_dict={}
-if scrape_button:
-    data_dict = Scrape_data(pages_number)
+
 
 
 
 
 #!Scrapping and calculating run time : start 
 start = time.time()
+data_dict = Scrape_data(pages_number)
 end = time.time()-start
 #!Scrapping and calculating run time : finish  
 

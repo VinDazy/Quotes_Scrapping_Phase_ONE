@@ -170,8 +170,8 @@ def st_graph_tag_instance(data):
     ])
 
     fig.update_layout(
-        title='Number of Instances per Tag',
-        xaxis_title='Top 10 Tags',
+        title='Top 10 tags',
+        xaxis_title='Tags',
         yaxis_title='Instances',
         showlegend=False,
         height=500,
