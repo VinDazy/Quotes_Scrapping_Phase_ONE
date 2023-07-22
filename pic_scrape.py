@@ -1,6 +1,9 @@
 import requests
 from bs4 import BeautifulSoup
 import os
+"""
+this function takes in an author name as input, scrapes their corresponding wikipedia image and saves it in a "Author Pictures" directory 
+"""
 
 
 def scrape_image(author_name):
@@ -56,5 +59,3 @@ def scrape_image(author_name):
         print(f'An error occurred: {e}')
 
 
-# Call the function with the author's name
-scrape_image("Mark Twain")

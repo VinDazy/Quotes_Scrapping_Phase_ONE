@@ -10,7 +10,11 @@ from PIL import Image
 from io import BytesIO
 from functions import *
 import plotly.graph_objects as go
-
+import requests
+from bs4 import BeautifulSoup
+import streamlit as st
+from PIL import Image
+import io
 
 
 def st_scrape(num_pages):
@@ -90,18 +94,15 @@ def st_tags_quotes(tags, data, number):
 
     return quotes_dict.values()
 def author_bio_link(author_name,data):
+    """using the author_name(string) and the data(dict) as input , this function returns the corresponding bio link of the author of type string """
     for quote in data:
         if author_name==data[quote]['author']:
             return data[quote]['author_bio']
-import requests
-from bs4 import BeautifulSoup
-import streamlit as st
-from PIL import Image
-import io
+
 
 
 def st_scrape_image(author_name,placement):
-    author_link_column=placement
+    """this function takes the author_name(str) and placement(string) as input, scrapes the corresponding author image in their wikipedia page and displays it in the correct placement in a streamlit web app  """
     author_name = author_name.replace(" ", '_')
     url = "https://en.wikipedia.org/wiki/"
     url = url + author_name

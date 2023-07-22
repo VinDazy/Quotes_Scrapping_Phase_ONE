@@ -59,7 +59,7 @@ def name_input():
 
 def author_quotes(author_name, data):
     """
-    takes the json file (data.json) as input and the author's name from the name_input functions and returns a list of all the quotes' associated to that author 
+    takes the data file (data : dict) as input and the author's name from the name_input functions and returns a list of all the quotes' associated to that author 
     """
     quotes = []
     for quote in data:
@@ -87,7 +87,7 @@ def filter_unique_authors(data):
 
 
 def filter_tags(data):
-    """takes the data file as input and returns a set of all the unique tags found in the scraped data  """
+    """takes the data(dict) file as input and returns a set of all the unique tags found in the scraped data  """
     tags = set()
     for quote in data:
         tags.update(tuple(data[quote]['tags']))
@@ -96,7 +96,7 @@ def filter_tags(data):
 
 
 def tags_input(data):
-    """takes the data file as input and returns a list of all user input tags """
+    """takes the data (dict) file as input and returns a list of all user input tags """
     print("You may choose your tag(s) from here\n", filter_tags(data))
     tags = (input(
         "Enter the tag(s) you want your quotes to have (Tags must be space-seperated): \n>> "))
@@ -105,13 +105,13 @@ def tags_input(data):
 
 
 def number_quotes():
-    """returns the number of quotes to show"""
+    """returns the number of quotes to show as integer"""
     number = int(input("Enter number of quotes to ouput : \n>> "))
     return number
 
 
 def tags_quotes(tags, data):
-    """takes the data file as input and the tags which are returned from the tags_input function , returns a dictionnary of the quotes containing similar to exact matching tags  """
+    """takes the data (dict)  as input and the tags (list) which are returned from the tags_input function , returns a dictionnary of the quotes containing similar to exact matching tags  """
     quotes_dict = {}
     number = number_quotes()
     count = 0
@@ -139,8 +139,8 @@ def tags_quotes(tags, data):
 #! 3.1. THIS IS OPTIONAL , add an input functionality to highlight a specific tag in the graph
 
 
-def count_tag_instances(data):
-    """returns a dictionnary of unique tags as keys, and an associated number of instances as values using the data file as input """
+def count_tag_instances(data : dict) :
+    """returns a dictionnary of unique tags as keys, and an associated number of instances as values using the data dict as input """
     tag_inst_dict = {key: 0 for key in filter_tags(data)}
     for quote_data in data.values():
         tags = quote_data['tags']
@@ -150,8 +150,8 @@ def count_tag_instances(data):
 # print(json.dumps(count_tag_instances(data=data),indent=4,ensure_ascii=False))
 
 
-def graph_tag_instance(data):
-    """using the data file as input, this functions shows a plot of the top 10 unique tags and their associated number of instances"""
+def graph_tag_instance(data:dict):
+    """using the data dict as input, this functions displays a plot of the top 10 unique tags and their associated number of instances"""
     tag_instances = count_tag_instances(data)
     sorted_tags = sorted(tag_instances.items(),
                          key=lambda x: x[1], reverse=True)
@@ -188,7 +188,7 @@ def filter_authors(data):
 
 def graph_author_quote(data):
     """
-    Graph the authors with their respective numbers of quotes and highlights the maximum
+    Graph the authors with their respective numbers of quotes and highlights the maximum using the data dict
     """
     author_quotes_dict = filter_authors(data)
     sorted_authors = sorted(author_quotes_dict.items(),
@@ -215,6 +215,7 @@ def graph_author_quote(data):
 
 
 def scrape_data():
+    """calculates the run time of the scrape function"""
     start = time.time()
     print("Scraping starting ...\n")
     data = scrape()
