@@ -1,5 +1,5 @@
 # Web Scrapping Analysis App
-## To view the web application, click on the following link [Quotes Scrapping App](https://quotesapp.streamlit.app/)
+##  App Link : [Quotes Scrapping App](https://quotesapp.streamlit.app/)
 
 ![GitHub last commit (by committer)](https://img.shields.io/github/last-commit/VinDazy/Quotes_Scrapping_Phase_ONE)
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/VinDazy/Quotes_Scrapping_Phase_ONE)
