@@ -17,7 +17,7 @@ cursor.execute(
     quote text,
     quote_id integer,
     author_id integer
-    )
+    )   
 """)
 
 
