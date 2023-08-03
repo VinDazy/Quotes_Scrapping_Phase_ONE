@@ -29,7 +29,7 @@ This Streamlit web application demonstrates an example of web scraping aiming to
 To install the required packages, you can run:
 
 ```bash
-pip install streamlit pillow plotly requests beautifulsoup4 matplotlib
+ pip install -r requirements.txt
 
 ```
 ## How to run the app 
